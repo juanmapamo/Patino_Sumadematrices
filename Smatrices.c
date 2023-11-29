@@ -13,7 +13,15 @@ int main (void)
     printf("Ingrese el tamanio de la columna\n");
     scanf("%d", &b);
     int matriz[a][b];
- 
+    for (int i = 0; i < a; i++)
+    {
+       for (int j = 0; j < b; j++)
+       {
+        matriz [i][j]=rand()%101;
+       }
+    }
+   
+   
     
     return 0;
 }
